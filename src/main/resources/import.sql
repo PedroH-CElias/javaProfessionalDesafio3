@@ -1,0 +1,10 @@
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Pedro', '111.111.111-11', 5000.00, '2000-09-29', 0);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Henrique', '222.222.222-22', 6000.00, '2000-09-01', 2);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Maria', '333.333.333-33', 7000.00, '2002-12-02', 0);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Fernanda', '444.444.444-444', 8000.00, '2001-11-03', 0);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Jayme', '555.555.555-55', 9000.00, '1999-10-04', 1);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Sandra', '666.666.666-66', 10000.00, '1998-08-05', 2);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Lara', '777.777.777.77', 11000.00, '1997-07-06', 1);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Veber', '888.888.888-88', 12000.00, '1996-06-07', 2);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Roselia', '999.999.999-99', 13000.00, '1995-05-08', 2);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Eduarda', '123.123.123-12', 14000.00, '1994-04-09', 1);
