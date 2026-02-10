@@ -18,9 +18,6 @@ import jakarta.servlet.http.HttpServletRequest;
 @ControllerAdvice
 public class ControllerExceptionHandler {
 
-	/*
-	 * Sempre que houver uma exception igual a ResourceNotFoundException, chamará esse método personalizado com a resposta
-	 */
 	@ExceptionHandler(ResourceNotFoundException.class)
 	public ResponseEntity<CustomError> resourceNotFound(ResourceNotFoundException e, HttpServletRequest request) {
 		HttpStatus status = HttpStatus.NOT_FOUND;
@@ -33,9 +30,8 @@ public class ControllerExceptionHandler {
 		HttpStatus status = HttpStatus.UNPROCESSABLE_ENTITY;
 		ValidationError err = new ValidationError(Instant.now(), status.value(), "Dados inválidos", request.getRequestURI());
 		
-		// Obtem as exceções geradas conforme anotations nos atributos de ProductDto
 		for (FieldError fe : e.getBindingResult().getFieldErrors()) {
-			err.addError(fe.getField(), fe.getDefaultMessage()); // Nome do campo e message
+			err.addError(fe.getField(), fe.getDefaultMessage());
 		}
 		
 		return ResponseEntity.status(status).body(err);
