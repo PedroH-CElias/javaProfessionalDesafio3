@@ -14,7 +14,7 @@ public class ClientDTO {
 	private String name;
 	private String cpf;
 	private Double income;
-	@PastOrPresent(message = "Data de nascimento não poder ser futura a o dia de hoje")
+	@PastOrPresent(message = "Data de nascimento não poder ser futura ao dia de hoje")
 	private LocalDate birthDate;
 	private Integer children;
 	
